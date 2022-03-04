@@ -23,9 +23,9 @@ resource "intersight_ippool_pool" "ippool_pool1" {
 
  variable "ippool_ip_v4_config" {
    type = string
-   description = " value for moid"
+   description = "IP_Pool"
  }
  variable "organization" {
    type = string
-   description = "value for organization"
+   description = "CIP"
  }
