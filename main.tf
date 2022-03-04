@@ -9,6 +9,12 @@ resource "intersight_ippool_pool" "ippool_pool1" {
      netmask     = "255.255.255.0"
      primary_dns = "8.8.8.8"
    }
+    ip_v4_blocks {
+    from  = "10.100.23.200"     //시작ip
+    object_type = "ippool.IpV4Config"
+    size  = "10"                //ip할당갯수
+    to = "10.100.23.209"        //끝 ip
+  }
    organization {
      object_type = "organization.Organization"
      moid        = var.organization
