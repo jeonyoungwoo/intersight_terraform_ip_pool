@@ -26,6 +26,7 @@ resource "intersight_ippool_pool" "ippool_pool1" {
    type = string
    description = "CIP"
  }
+
 variable "ip_pool" {
   type        = string
   description = "Name of IP Pool used by IMC Access Policy"
