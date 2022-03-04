@@ -16,7 +16,7 @@ resource "intersight_ippool_pool" "ippool_pool1" {
     to = "10.100.23.209"        //끝 ip
   }
    organization {
-    moid = data.intersight_organization_organization.cip_org.results.0.moid
+    moid = data.intersight_organization_organization.org.results.0.moid
     object_type = "organization.Organization"
   }
 }
